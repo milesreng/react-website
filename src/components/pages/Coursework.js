@@ -5,9 +5,9 @@ class Coursework extends Component {
         return (
             <div className="coursework container-fluid">
                 <div className="row justify-content-evenly">
-                    <div className="col-3"></div>
-                    <div className="col-3"></div>
-                    <div className="col-3 coursework-label">
+                    <div className="col-1 col-lg-3"></div>
+                    <div className="col-1 col-lg-3"></div>
+                    <div className="col-10 col-lg-3 coursework-label">
                         <p className="duke">
                             <img src="https://img.icons8.com/fluency-systems-regular/96/000000/education.png" alt="graduation cap" />
                             Duke University</p>
@@ -16,7 +16,7 @@ class Coursework extends Component {
                     </div>
                 </div>
                 <div className="row justify-content-evenly">
-                    <div className="card col-12 col-xl-3 card-animate card-1">
+                    <div className="card col-12 col-lg-3 card-animate card-1">
                         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="cpu" />
                         <div className="card-header course-title">
                             <h2>CS250 - Computer Architecture</h2>
@@ -28,7 +28,7 @@ class Coursework extends Component {
                             <a href="" target="_blank" className="btn btn-coursework">view course page</a>
                         </div>
                     </div>
-                    <div className="card col-12 col-xl-3 card-animate card-2">
+                    <div className="card col-12 col-lg-3 card-animate card-2">
                         <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="laptop with code" />
                         <div className="card-header course-title long-course-title">
                             <h2>CS201 - Data Structures & Algorithms</h2>
@@ -40,7 +40,7 @@ class Coursework extends Component {
                             <a href="https://sites.duke.edu/compsci_201_001_sp22/" target="_blank" className="btn btn-coursework">view course page</a>
                         </div>
                     </div>
-                    <div className="card col-12 col-xl-3 card-animate card-3">
+                    <div className="card col-12 col-lg-3 card-animate card-3">
                         <img src="https://images.unsplash.com/photo-1609017909889-d7b582c072f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80" alt="red dice" />
                         <div className="card-header course-title">
                             <h2>STA199 - Intro to Data Science</h2>
