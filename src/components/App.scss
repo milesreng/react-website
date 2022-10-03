@@ -13,6 +13,11 @@ html, body {
   font-family: 'Noto Sans', sans-serif;
   color: $primary-color;
   padding-top: 5vh;
+  overflow: hidden;
+
+  @media only screen and (max-width:768px) {
+    overflow-y: scroll;
+  }
 }
 
 /* LAYOUT */
@@ -81,9 +86,9 @@ html, body {
   min-width: 10px;
 }
 
-@for $i from 1 through 45 {
+@for $i from 1 through 65 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 15}s;
+    animation-delay: #{$i / 10}s;
   }
 }
 
@@ -181,6 +186,13 @@ html, body {
     color: $primary-color;
     font-size: 6rem;
     font-weight: 300;
+
+    .home-desc {
+      margin-top: 0;
+      padding-top: 0;
+      color: $dark-blue;
+      font-size: 5rem;
+    }
   }
 
   h2 {
@@ -212,18 +224,52 @@ html, body {
 }
 
 .home-img {
-  width: 30%;
+  height: 60vh;
   float: right;
-  height: auto;
-  margin-top: 7rem;
-  margin-right: 5rem;
+  width: auto;
+  margin-top: 15vh;
+  margin-right: 7rem;
 }
 
 /* ABOUT ME */ 
 
 .about {
+  position: absolute;
+
   img {
-    width: 20%;
+    width: 90%;
+    margin: auto;
+  }
+
+  .about-info {
+    padding: 2rem;
+
+    @media only screen and (max-width:768px) {
+      width: 95%;
+      margin: auto;
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 45%;
+    }
+
+    h1 {
+      font-family: 'Noto Sans';
+      font-size: 5rem;
+      text-transform: uppercase;
+      padding-bottom: 2rem;
+    }
+
+    .about-info-p {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 50%;
+    }
+
+    p {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -234,7 +280,7 @@ html, body {
   margin: auto;
 
   h1 {
-    padding-top: 2rem;
+    padding-top: 5rem;
     text-transform: uppercase;
     font-size: 4rem;
   }

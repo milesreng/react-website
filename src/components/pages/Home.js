@@ -7,22 +7,24 @@ import '../App.scss';
 
 const Home = () => {
     const [letterClass, setLetter] = useState('text-animate');
-    const nameArray = [' ', 'M', 'i', 'l', 'e', 's'];
-    const jobArray = "idk what to put here.".split("");
+    const nameArray = [' ', 'M', 'i', 'l', 'e', 's', ','];
+    const jobArray = "a computer science student.".split("");
 
     return (
         <div className="custom-container home-page">
             <div className="text-zone">
                 <h1>
                     <span className={letterClass}>H</span>
-                    <span className={`${letterClass} _12`}>i,</span><br />
+                    <span className={`${letterClass} _12`}>i</span><br />
                     <span className={`${letterClass} _13`}>I</span>
                     <span className={`${letterClass} _14`}>'m</span> 
-                    <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={21} />
+                        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
+                        <br />
+                    <span className="home-desc">
+                        <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
+                    </span>
                 </h1>
-                <h2>Frontend Developer / JavaScript</h2>
+                <h2>Duke University / Java : JavaScript : Python</h2>
                 <Link className="btn" to="/contact">CONTACT ME</Link>
             </div>
             <img className="home-img" src={ClipArt} alt="man typing at computer" />

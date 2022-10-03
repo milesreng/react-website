@@ -21,9 +21,9 @@ class NavBar extends Component {
           <Navbar.Brand href="/"><span id="nav-name">Miles Eng</span></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="nav-left me-auto">
-              <a href="https://www.linkedin.com/in/milesreng/" target="_blank"><FontAwesomeIcon className="external-fa-links" icon={faLinkedin} /></a>
-              <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links" icon={faGithub} /></a>
+            <Nav className="nav-left me-auto d-inline-block">
+              <a href="https://www.linkedin.com/in/milesreng/" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faLinkedin} /></a>
+              <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faGithub} /></a>
             </Nav>
             <Nav className="nav-right">
               <Nav.Link href="/">

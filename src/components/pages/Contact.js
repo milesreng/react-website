@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render() {
         return (
-            <div className="contact-container mt-5 pt-5">
+            <div className="contact-container">
                 <h1>Contact Me</h1>
                 <div className="card row">
                     <div className="card-body form-container">
