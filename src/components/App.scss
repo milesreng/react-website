@@ -1,0 +1,296 @@
+$primary-color: #6E9887;
+$coffee: #6D4C3D;
+$dark-blue: #042A2B;
+$golden-rod: #E6AF2E;
+$golden-rod-hover: #caa242;
+$grey: #d0d0d0;
+$grey-hover: #abb8c3;
+
+@import 'animate.css';
+
+html, body {
+  font-size: 16px;
+  font-family: 'Noto Sans', sans-serif;
+  color: $primary-color;
+  padding-top: 5vh;
+}
+
+/* LAYOUT */
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.tags {
+  font-family: 'Noto Sans Mono', monospace;
+  color: $primary-color;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+}
+
+.top-tags {
+  bottom: auto;
+}
+
+.while-tag {
+  padding-top: 4rem;
+  padding-left: 4rem;
+  bottom: auto;
+  color: $coffee;
+}
+
+.while-tag-bottom {
+  bottom: 20vh;
+  padding-left: 4rem;
+  color: $coffee;
+}
+
+.bottom-tags {
+  bottom: 15vh;
+  top: auto;
+}
+
+.custom-container {
+  width: 100%;
+  will-change: contents;
+  height: 90%;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+/* ANIMATED LETTERS */
+
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+@for $i from 1 through 45 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 15}s;
+  }
+}
+
+/* NAVBAR */
+  
+.bg-navbar {
+  background: $dark-blue;
+  min-height: 5vh;
+}
+  
+.nav-container {
+  /* width: 80%; */
+  margin: auto;
+  font-family: 'Noto Sans', sans-serif;
+}
+  
+.nav-bar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+  
+.nav-left {
+  padding-left: 2rem;
+  padding-top: .3rem;
+}
+
+.nav-right {
+  padding-right: 5vh;
+}
+  
+.external-fa-links {
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  color: $grey-hover;
+
+  &:hover {
+    color: $grey;
+  }
+
+  transition: color 200ms linear;
+}
+
+.nav-header {
+  font-size: 1.7rem;
+}
+  
+.navButton {
+  margin: 3vh;
+}
+  
+#nav-name {
+  font-size: 2.5rem;
+  padding-left: 5vh;
+  text-transform: uppercase;
+  color: $grey;
+  font-family: 'Noto Sans Mono', sans-serif;
+}
+  
+#nav-home, #nav-about, #nav-skills, #nav-projects, #nav-coursework, #nav-contact {
+  font-size: 1.7rem;
+  padding-right: 2rem;
+  color: $grey;
+  font-family: 'Noto Sans', sans-serif;
+  .fa-icon {
+    padding-right: .5rem;
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    color: $grey-hover;
+  }
+
+  transition: color 200ms linear;
+
+}
+
+/* HOME PAGE */
+
+.home-page {
+  .text-zone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    color: $primary-color;
+    font-size: 6rem;
+    font-weight: 300;
+  }
+
+  h2 {
+    color: $golden-rod;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    animation: fadeIn 1s 1.7s backwards;
+  }
+
+  .btn {
+    margin-top: 2rem;
+    width: 30%;
+    font-size: 2rem;
+    background-color: $golden-rod;
+    border: 2px solid $grey;
+    border-radius: 10px;
+    letter-spacing: 4px;
+    color: white;
+    animation: fadeIn 1s 2.5s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $golden-rod-hover;
+      color: white;
+    }
+
+    transition: background-color 200ms linear;
+  }
+}
+
+.home-img {
+  width: 30%;
+  float: right;
+  height: auto;
+  margin-top: 7rem;
+  margin-right: 5rem;
+}
+
+/* ABOUT ME */ 
+
+.about {
+  img {
+    width: 20%;
+  }
+}
+
+/* CONTACT */ 
+
+.contact-container {
+  width: 50%;
+  margin: auto;
+
+  h1 {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+  }
+}
+
+.form-container {
+  height: 50vh;
+}
+
+.form-label {
+  font-size: 1.4rem;
+  color: $dark-blue;
+  background-color: $grey;
+}
+
+.form-firstline {
+  height: 3rem;
+}
+
+form {
+  padding: 1rem !important;
+}
+
+.contact-message {
+  min-height: 30vh !important; 
+  font-size: 1.4rem;
+}
+
+#btn-submit-form {
+  font-size: 2rem;
+  padding: 0 1rem;
+  background-color: $golden-rod;
+  border: 2px solid $grey;
+  border-radius: 10px;
+  color: white;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: $golden-rod-hover;
+  }
+
+  transition: background-color 200ms linear;
+}
+
+/* FOOTER */
+
+footer {
+  display: block;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  color: $grey;
+    }
+    
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
