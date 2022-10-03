@@ -7,9 +7,9 @@ import collage from '../../assets/collage.png';
 class About extends Component {
     render() {
         return (
-            <div className="about container-fluid mt-5 pt-5">
-                <div className="row pt-5">
-                    <div className="col-12 col-md-6">
+            <div className="about container-fluid mt-5">
+                <div className="row">
+                    <div className="col-12 col-md-6 pt-5">
                         <img src={collage} alt="Miles wearing a hat" />
                     </div>
                     <div className="col-12 col-md-6 about-info pt-5">

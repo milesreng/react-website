@@ -1,12 +1,12 @@
 $primary-color: #6E9887;
 $primary-color-hover: #547d6d;
 $coffee: #6D4C3D;
-$dark-blue: #042A2B;
+$dark-blue: #041b1c;
 $dark-blue-transparent: #042a2bd7;
 $golden-rod: #E6AF2E;
 $golden-rod-hover: #caa242;
-$grey: #d0d0d0;
-$grey-hover: #abb8c3;
+$grey: #e8e8e8;
+$grey-hover: #bbcbd8;
 
 @import 'animate.css';
 
@@ -17,7 +17,7 @@ html, body {
   padding-top: 5vh;
   overflow: hidden;
 
-  @media only screen and (max-width:768px) {
+  @media only screen and (max-width:992px) {
     overflow-y: scroll;
   }
 }
@@ -264,12 +264,11 @@ html, body {
     width: 90%;
     margin: auto;
     opacity: 0;
-    animation: bounceIn 1s 1s;
+    animation: bounceIn 1s .2s;
     animation-fill-mode: forwards;
   }
 
   .about-info {
-    padding: 2rem;
 
     @media only screen and (max-width:768px) {
       width: 95%;
@@ -281,21 +280,21 @@ html, body {
     }
 
     h1 {
-      font-family: 'Noto Sans';
-      font-size: 5rem;
+      font-family: 'Noto Sans', sans-serif;
+      font-size: 4rem;
       text-transform: uppercase;
-      padding-bottom: 2rem;
+      padding-bottom: 1.5rem;
     }
 
     .about-info-p {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 50%;
+      justify-content: space-around;
+      height: 80%;
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }
@@ -303,9 +302,164 @@ html, body {
 /* SKILLS */
 
 .skills {
-  .skill-logo {
-    width: 10rem;
+  width: 85%;
+  height: 30%;
+
+  .logo-row {
+
+    @media only screen and (max-width:768px) {
+      padding-top: 15vh;
+    }
+
+    @media only screen and (min-width:768px) {
+      padding-top: 30vh;
+    }
+
+    display: flex;
+    align-items: center;
+    
+    .skill-logo {
+      max-width: 12rem;
+
+      .img-container {
+        display: flex;
+        justify-content: center;
+        min-height: 9.8rem;
+
+        img {
+          width: 90%;
+          transition: width 200ms linear;
+        }
+  
+        img:hover {
+          width: 100%;
+        }
+      }
+
+
+      h3 {
+        text-align: center;
+        font-size: 1.6rem;
+        color: $dark-blue;
+      }
+    }
   }
+
+    .skill-animate {
+      opacity: 0;
+      animation: bounceIn;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-fill-mode: forwards;
+    }
+
+    @media only screen and (min-width:768px) {
+      @for $i from 1 through 65 {
+        .skill-animate._#{$i} {
+          animation-delay: #{$i / 10}s;
+        }
+      }
+    }
+  } 
+
+/* PROJECTS */
+
+.projects {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+
+  .projects-header {
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    @media only screen and (max-width:992px) {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    @media only screen and (min-width:992px) {
+      height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .project {
+      .project-card {
+        width: 100%;
+        border: none;
+
+        .card-header {
+          display: flex;
+          align-items: center;
+          padding: 1rem 1rem .3rem 1rem !important;
+          font-family: 'Noto Sans Mono', monospace;
+          color: $dark-blue;
+          h3 {
+            font-size: 1.56rem !important;
+          }
+        }
+
+        .project-img-container {
+          height: 13rem;
+          display: flex;
+          justify-content: center;
+
+          .project-img {
+            height: 100%;
+            margin: auto;
+            border: 1px solid $dark-blue;
+            max-width: 13rem;
+          }
+        }
+
+        .card-text-container {
+          padding-top: .3rem;
+          display: flex;
+          align-items: center;
+          font-size: 1.3rem;
+          color: $coffee;
+
+          .card-title {
+            font-family: 'Noto Sans Mono', monospace;
+            color: $dark-blue;
+
+            &::before {
+              content: "> ";
+            }
+          }
+
+          .btn-project {
+            border: 1px solid $coffee;
+            border-radius: 1rem;
+            min-width: 6%;
+            max-width: 20%;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1rem;
+            color: white;
+            background-color: $golden-rod;
+            padding: .1rem;
+            margin-left: .5rem !important;
+            transition: background-color 200ms linear;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $golden-rod-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
 
 /* COURSEWORK */
@@ -389,21 +543,21 @@ html, body {
 
   .card-animate {
     opacity: 0;
-    animation: fadeIn;
+    animation: bounceIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
 
   .card-1 {
-    animation-delay: 1s;
+    animation-delay: .4s;
   }
 
   .card-2 {
-    animation-delay: 1.2s;
+    animation-delay: .6s;
   }
 
   .card-3 {
-    animation-delay: 1.4s;
+    animation-delay: .8s;
   }
 }
 
@@ -416,22 +570,22 @@ html, body {
   h1 {
     padding-top: 5rem;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
 .form-container {
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .form-label {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: $dark-blue;
   background-color: $grey;
 }
 
 .form-firstline {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 form {
@@ -440,17 +594,17 @@ form {
 
 .contact-message {
   min-height: 30vh !important; 
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 #btn-submit-form {
-  font-size: 2rem;
-  padding: 0 1rem;
+  font-size: 1.5rem;
+  padding: .2rem 1rem;
   background-color: $golden-rod;
   border: 2px solid $grey;
   border-radius: 10px;
   color: white;
-  margin-top: 2rem;
+  margin-top: 1rem;
 
   &:hover {
     background-color: $golden-rod-hover;
