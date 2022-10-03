@@ -24,7 +24,7 @@ const Home = () => {
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={22} />
                     </span>
                 </h1>
-                <h2>Duke University / Java : JavaScript : Python</h2>
+                <h2>Sophomore @ Duke University</h2>
                 <Link className="btn" to="/contact">CONTACT ME</Link>
             </div>
             <img className="home-img" src={ClipArt} alt="man typing at computer" />

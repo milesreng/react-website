@@ -1,6 +1,8 @@
 $primary-color: #6E9887;
+$primary-color-hover: #547d6d;
 $coffee: #6D4C3D;
 $dark-blue: #042A2B;
+$dark-blue-transparent: #042a2bd7;
 $golden-rod: #E6AF2E;
 $golden-rod-hover: #caa242;
 $grey: #d0d0d0;
@@ -190,7 +192,7 @@ html, body {
     .home-desc {
       margin-top: 0;
       padding-top: 0;
-      color: $dark-blue;
+      color: $coffee;
       font-size: 5rem;
     }
   }
@@ -270,6 +272,116 @@ html, body {
     p {
       font-size: 2rem;
     }
+  }
+}
+
+/* SKILLS */
+
+.skills {
+  .skill-logo {
+    width: 10rem;
+  }
+}
+
+/* COURSEWORK */
+
+.coursework {
+
+  .coursework-label {
+    text-align: right;
+    font-family: 'Noto Sans Mono';
+    animation: bounceIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    .duke {
+      font-size: 1.7rem;
+      font-weight: bold;
+      color: black;
+
+      img {
+        height: 4rem;
+        padding-right: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .card {
+    border: none;
+    padding-top: 2rem;
+
+
+    img {
+      border: 1px solid $coffee;
+      border-bottom: none !important;
+    }
+
+    .card-header {
+      min-height: 4rem;
+      font-family: 'Noto Sans Mono';
+      display: flex;
+      align-items: center;
+      border: 1px solid $coffee;
+      border-top: none !important;
+      border-bottom: none !important;
+      background-color: $dark-blue;
+      color: white;
+    }
+
+    .long-course-title h2 {
+      font-size: 1.8rem;
+    }
+
+    .card-body {
+      border: 1px solid $coffee;
+      border-top: none !important;
+      background-color: $dark-blue-transparent;
+      color: white;
+
+      .course-desc {
+        font-size: 1.5rem;
+        min-height: 9rem;
+        display: flex;
+        align-items: center;
+
+        .in-progress {
+          font-style: italic;
+        }
+      }
+
+      .btn-coursework {
+        background-color: $primary-color;
+        font-size: 1.2rem;
+        color: white;
+
+        &:hover {
+          background-color: $primary-color-hover;
+        }
+      }
+    }
+  }
+
+  .card-animate {
+    opacity: 0;
+    animation: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .card-1 {
+    animation-delay: 1s;
+  }
+
+  .card-2 {
+    animation-delay: 1.2s;
+  }
+
+  .card-3 {
+    animation-delay: 1.4s;
   }
 }
 
