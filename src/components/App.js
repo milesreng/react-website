@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Link } from 'react-router-dom';
@@ -19,7 +19,7 @@ import './App.scss';
 class App extends React.Component {
   render () {
     return (
-        <Router>
+        <Router basename="/milesreng.github.io">
           <Layout />
           <Routes>
             <Route path="/" exact element={<Home />} />
