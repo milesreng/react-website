@@ -1,7 +1,7 @@
 {
   "name": "upd-website",
   "version": "0.1.0",
-  "homepage": "https://milesreng.github.io",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
