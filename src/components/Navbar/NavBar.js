@@ -26,37 +26,37 @@ class NavBar extends Component {
               <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faGithub} /></a>
             </Nav>
             <Nav className="nav-right">
-              <Link className="btn" to="/">
+              <Link to="/">
                 <span id="nav-home">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faHome} />
                   Home
                 </span>
               </Link>
-              <Link className="btn" to="/about">
+              <Link to="/about">
                 <span id="nav-about">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faUser} />
                   About
                 </span>
               </Link>
-              <Link className="btn" to="/skills">
+              <Link to="/skills">
                 <span id="nav-skills">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faClipboardCheck} />
                   Skills
                 </span>
               </Link>
-              <Link className="btn" to="/projects">
+              <Link to="/projects">
                 <span id="nav-projects">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faComputer} />
                   Projects
                 </span>
               </Link>
-              <Link className="btn" to="/coursework">
+              <Link to="/coursework">
                 <span id="nav-coursework">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faChalkboard} />
                   Coursework
                 </span>
               </Link>
-              <Link className="btn" to="/contact">
+              <Link to="/contact">
                 <span id="nav-contact">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faAddressBook} />
                   Contact

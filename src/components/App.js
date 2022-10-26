@@ -14,6 +14,8 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './Footer';
 
+import NavBarTest from './Navbar/NavBarTest';
+
 import './App.scss';
 
 class App extends React.Component {
