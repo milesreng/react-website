@@ -1,10 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
-  Link } from 'react-router-dom';
+  Link, 
+  Navigate } from 'react-router-dom';
 import Layout from './Layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -24,6 +25,8 @@ class App extends React.Component {
         <Router>
           <Layout />
           <Routes>
+            <Route path='/404' element={<PageNotFound/>} />
+            <Route path='*' element={<Navigate replace to='/404'/>} />
             <Route path="/" exact element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
