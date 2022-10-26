@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div>
-            <NavBar />
+            <NavBarTest />
             <div className="custom-container home-page">
                 <div className="text-zone">
                     <h1>

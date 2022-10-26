@@ -22,6 +22,23 @@ html, body {
   }
 }
 
+.nav-bar-test {
+  position: fixed;
+  width: 100%;
+  margin-top: 0;
+  background-color: $dark-blue;
+  min-height: 5vh;
+}
+
+.test-nav {
+  margin-top: 0;
+  padding-top: 0;
+  width: 80%;
+  margin: auto !important;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* LAYOUT */
 
 .page {
