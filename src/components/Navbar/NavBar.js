@@ -26,42 +26,42 @@ class NavBar extends Component {
               <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faGithub} /></a>
             </Nav>
             <Nav className="nav-right">
-              <Nav.Link href="/">
+              <NavLink to="/">
                 <span id="nav-home">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faHome} />
                   Home
                 </span>
-              </Nav.Link>
-              <Nav.Link href="/about">
+              </NavLink>
+              <NavLink to="/about">
                 <span id="nav-about">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faUser} />
                   About
                 </span>
-              </Nav.Link>
-              <Nav.Link href="/skills">
+              </NavLink>
+              <NavLink to="/skills">
                 <span id="nav-skills">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faClipboardCheck} />
                   Skills
                 </span>
-              </Nav.Link>
-              <Nav.Link href="/projects">
+              </NavLink>
+              <NavLink to="/projects">
                 <span id="nav-projects">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faComputer} />
                   Projects
                 </span>
-              </Nav.Link>
-              <Nav.Link href="/coursework">
+              </NavLink>
+              <NavLink to="/coursework">
                 <span id="nav-coursework">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faChalkboard} />
                   Coursework
                 </span>
-              </Nav.Link>
-              <Nav.Link href="/contact">
+              </NavLink>
+              <NavLink to="/contact">
                 <span id="nav-contact">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faAddressBook} />
                   Contact
                 </span>
-              </Nav.Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
