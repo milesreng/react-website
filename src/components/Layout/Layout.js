@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from "../Navbar/NavBar";
+import NavBarTest from '../Navbar/NavBarTest';
 
 import '../App.scss';
 
@@ -8,7 +9,6 @@ class Layout extends Component {
     render() {
         return (
             <div classname="App">
-                <NavBar />
                 <div className="page">
                     <span className="tags top-tags h2">public static void main(String args, int[] argv*) &#123;</span>
                     <br />
