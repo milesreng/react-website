@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -26,42 +26,42 @@ class NavBar extends Component {
               <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faGithub} /></a>
             </Nav>
             <Nav className="nav-right">
-              <NavLink to="/">
+              <Link to="/">
                 <span id="nav-home">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faHome} />
                   Home
                 </span>
-              </NavLink>
-              <NavLink to="/about">
+              </Link>
+              <Link to="/about">
                 <span id="nav-about">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faUser} />
                   About
                 </span>
-              </NavLink>
-              <NavLink to="/skills">
+              </Link>
+              <Link to="/skills">
                 <span id="nav-skills">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faClipboardCheck} />
                   Skills
                 </span>
-              </NavLink>
-              <NavLink to="/projects">
+              </Link>
+              <Link to="/projects">
                 <span id="nav-projects">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faComputer} />
                   Projects
                 </span>
-              </NavLink>
-              <NavLink to="/coursework">
+              </Link>
+              <Link to="/coursework">
                 <span id="nav-coursework">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faChalkboard} />
                   Coursework
                 </span>
-              </NavLink>
-              <NavLink to="/contact">
+              </Link>
+              <Link to="/contact">
                 <span id="nav-contact">
                   <FontAwesomeIcon className="fa-icon d-sm-inline d-md-none" icon={faAddressBook} />
                   Contact
                 </span>
-              </NavLink>
+              </Link>
             </Nav>
           </Navbar.Collapse>
       </Navbar>
