@@ -13,6 +13,7 @@ import {
   faLinkedin,
   faGithub
   } from '@fortawesome/free-brands-svg-icons';
+import Resume from '../../assets/Resume_Miles_Eng_2022.pdf';
 
 class NavBar extends Component {
   render() {
@@ -24,6 +25,7 @@ class NavBar extends Component {
             <Nav className="nav-left me-auto d-inline-block">
               <a href="https://www.linkedin.com/in/milesreng/" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faLinkedin} /></a>
               <a href="https://github.com/milesreng" target="_blank"><FontAwesomeIcon className="external-fa-links d-inline-block" icon={faGithub} /></a>
+              <a className="resume-link" href={Resume} target="_blank">Resume</a>
             </Nav>
             <Nav className="nav-right">
               <Link to="/">

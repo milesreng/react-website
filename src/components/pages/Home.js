@@ -1,9 +1,7 @@
-import React, { Component, useState } from 'react';
+import React, {  useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters/Animated';
 import ClipArt from '../../assets/computer-removebg.png';
-import NavBarTest from '../Navbar/NavBarTest';
-import NavBar from '../Navbar/NavBar';
 
 import '../App.scss';
 
@@ -14,7 +12,6 @@ const Home = () => {
 
     return (
         <div>
-            <NavBarTest />
             <div className="custom-container home-page">
                 <div className="text-zone">
                     <h1>

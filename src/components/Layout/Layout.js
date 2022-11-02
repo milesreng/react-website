@@ -9,6 +9,7 @@ class Layout extends Component {
     render() {
         return (
             <div classname="App">
+                <NavBar />
                 <div className="page">
                     <span className="tags top-tags h2">public static void main(String args, int[] argv*) &#123;</span>
                     <br />

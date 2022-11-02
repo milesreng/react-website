@@ -11,7 +11,7 @@ $grey-hover: #bbcbd8;
 @import 'animate.css';
 
 html, body {
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Noto Sans', sans-serif;
   color: $primary-color;
   padding-top: 5vh;
@@ -20,23 +20,6 @@ html, body {
   @media only screen and (max-width:992px) {
     overflow-y: scroll;
   }
-}
-
-.nav-bar-test {
-  position: fixed;
-  width: 100%;
-  margin-top: 0;
-  background-color: $dark-blue;
-  min-height: 5vh;
-}
-
-.test-nav {
-  margin-top: 0;
-  padding-top: 0;
-  width: 80%;
-  margin: auto !important;
-  display: flex;
-  justify-content: space-between;
 }
 
 /* LAYOUT */
@@ -118,7 +101,6 @@ html, body {
   }
 }
 
-
 /* NAVBAR */
   
 .bg-navbar {
@@ -143,6 +125,12 @@ html, body {
 .nav-left {
   padding-left: 2rem;
   padding-top: .3rem;
+
+  .resume-link {
+    text-decoration: none;
+    color: $grey-hover;
+    align-self: center;
+  }
 }
 
 .nav-right {
